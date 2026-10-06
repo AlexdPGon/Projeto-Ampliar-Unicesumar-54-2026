@@ -12,8 +12,10 @@
     Agora, o sistema precisa realizar algumas verificações seguindo exatamente estas regras:
 
     Primeiro, verifique se o código de identificação registrado (13) é diferente do código esperado (29). O resultado dessa verificação deve ser invertido.
+
     Depois, verifique se a temperatura registrada (11 graus) é menor ou igual ao limite de referência (-37 graus). O resultado dessa verificação também deve ser invertido.
     Depois dessas duas verificações, o sistema deve considerar que pelo menos uma delas precisa ser verdadeira.
+
     O resultado dessa análise deve ser combinado com uma terceira verificação: a pontuação atual (20 pontos) deve ser maior ou igual à pontuação mínima exigida (11 pontos). Para essa etapa, as duas condições precisam ser verdadeiras ao mesmo tempo.
     Por fim, o resultado de toda essa análise deve ser invertido novamente.
     
@@ -41,7 +43,7 @@ int main() {
 
     bool retornoBool;
 
-    // retornoBool = descomente, apague este comentário e escreva a expressão aqui;
+    retornoBool = !(((!(13 != 29)) || (!(11 <= -37))) && (20 >= 11));
 
     printf("Valor do retorno: %d\n", retornoBool);
 

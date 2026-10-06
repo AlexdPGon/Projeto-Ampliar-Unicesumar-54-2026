@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+// #include <stdlib.h>
 
 int main() {
-    system("clear");
+    // system("clear");
     int numero1, numero2, resultado;
 
     bool valor = true; // false
