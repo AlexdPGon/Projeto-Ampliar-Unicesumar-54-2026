@@ -6,8 +6,8 @@
 #include <stdlib.h>
 
 int main() {
-    // system("cls");
-    int idade1 = 0, idade2 = 0;
+    system("cls");
+    int idade1, idade2;
 
     printf("Digite a primeira idade: ");
     scanf("%d", &idade1);
